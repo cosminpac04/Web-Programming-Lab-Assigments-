@@ -1,0 +1,43 @@
+body{
+    font-family: Arial;
+    background-color: #f4f4f4;
+}
+
+.meniu{
+    width: 150px;
+    height: 0px;
+    background: bisque;
+    color: black;
+    border-radius: 5px;
+    float: right;
+}
+
+.meniu ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.meniu li{
+    position:relative;
+    padding: 10px;
+    cursor: pointer;
+    background: bisque;
+    border:#555 1px solid;
+}
+
+.meniu li:hover {
+    background: #555;
+}
+
+.submeniu{
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    min-width: 200px;
+    padding: 0;
+}
+
+.meniu li:hover> .submeniu{
+    display: block;
+}
